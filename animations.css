@@ -1,0 +1,21 @@
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Pop-in Effect */
+.animate-pop-in {
+    animation: popIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    opacity: 0;
+}
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Delay for Elements */
+.hero h2 { animation-delay: 0.4s; }
+.hero p { animation-delay: 0.8s; }
+.cta { animation-delay: 1.2s; }
